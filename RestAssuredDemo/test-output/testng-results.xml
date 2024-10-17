@@ -1,21 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-13T00:25:50 GST" name="Suite" finished-at="2024-10-13T00:25:54 GST" duration-ms="3700">
+  <suite started-at="2024-10-14T10:57:21 GST" name="Default suite" finished-at="2024-10-14T10:57:23 GST" duration-ms="2291">
     <groups>
     </groups>
-    <test started-at="2024-10-13T00:25:50 GST" name="Test" finished-at="2024-10-13T00:25:54 GST" duration-ms="3700">
-      <class name="com.qa.requests.UserTest">
-        <test-method signature="getTest()[pri:0, instance:com.qa.requests.UserTest@7d4f9aae]" started-at="2024-10-13T00:25:50 GST" name="getTest" finished-at="2024-10-13T00:25:53 GST" duration-ms="2474" status="PASS">
+    <test started-at="2024-10-14T10:57:21 GST" name="Default test" finished-at="2024-10-14T10:57:23 GST" duration-ms="2291">
+      <class name="com.qa.requests.GetZipCodeExample">
+        <test-method signature="getZipcode()[pri:0, instance:com.qa.requests.GetZipCodeExample@7a362b6b]" started-at="2024-10-14T10:57:21 GST" name="getZipcode" finished-at="2024-10-14T10:57:23 GST" duration-ms="2125" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class io.restassured.internal.ValidatableResponseImpl cannot be cast to class com.qa.requests.Response (io.restassured.internal.ValidatableResponseImpl and com.qa.requests.Response are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class io.restassured.internal.ValidatableResponseImpl cannot be cast to class com.qa.requests.Response (io.restassured.internal.ValidatableResponseImpl and com.qa.requests.Response are in unnamed module of loader 'app')
+at com.qa.requests.GetZipCodeExample.getZipcode(GetZipCodeExample.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTest -->
-        <test-method signature="postTest()[pri:0, instance:com.qa.requests.UserTest@7d4f9aae]" started-at="2024-10-13T00:25:53 GST" name="postTest" finished-at="2024-10-13T00:25:54 GST" duration-ms="1140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postTest -->
-      </class> <!-- com.qa.requests.UserTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- getZipcode -->
+      </class> <!-- com.qa.requests.GetZipCodeExample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
